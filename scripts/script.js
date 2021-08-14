@@ -32,7 +32,7 @@ function getBrowser() {
 		version = ua.match(/version\/([\d.]+)/)[1];
 	}
 	return [browser, version];
-}
+}f
 function IEVersion() {
 	//From https://www.cnblogs.com/XCWebLTE/archive/2017/06/15/7017338.html
     var userAgent = navigator.userAgent;
@@ -122,7 +122,7 @@ function showHideMenu()
 //Update & Debug
 String.prototype.startsWith = function(str){var reg = new RegExp("^" + str);return reg.test(this);};
 String.prototype.endsWith = function(str){var reg = new RegExp(str + "$");return reg.test(this);};
-var updatedate = "13.32";
+var updatedate = "";
 if (updatedate !== "") {
 	window.location.href = "update?date=" + updatedate;
 }
